@@ -43,7 +43,8 @@
       background: var(--bg);
       color: var(--text);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.5;
+      font-size: 18px;
+      line-height: 1.6;
       overflow-x: hidden;
     }
 
@@ -123,7 +124,7 @@
     }
 
     .nav-links a {
-      font-size: 14px;
+      font-size: 17px;
       font-weight: 750;
       color: #555d68;
       transition: .2s;
@@ -148,7 +149,7 @@
       border: 0;
       border-radius: 12px;
       padding: 11px 17px;
-      font-size: 14px;
+      font-size: 17px;
       font-weight: 850;
       transition: .22s ease;
     }
@@ -211,7 +212,7 @@
       padding: 12px 3px;
       border-bottom: 1px solid #f0f1f3;
       font-weight: 750;
-      font-size: 14px;
+      font-size: 17px;
       transition: all .2s ease;
     }
 
@@ -221,6 +222,50 @@
       padding-left: 14px;
       border-left: 3px solid var(--primary);
       border-radius: 0 8px 8px 0;
+    }
+
+    .mobile-menu .mobile-auth-badges {
+      display: flex;
+      gap: 10px;
+      padding: 16px 3px 6px;
+      border-bottom: none;
+    }
+
+    .mobile-menu .mobile-auth-badges a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      padding: 12px 16px;
+      border: none;
+      border-bottom: none;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 850;
+      text-align: center;
+      transition: all .22s ease;
+    }
+
+    .mobile-menu .mobile-auth-badges .mobile-login-badge {
+      color: var(--text);
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+
+    .mobile-menu .mobile-auth-badges .mobile-login-badge:hover {
+      color: var(--primary);
+      border-color: #cec8ff;
+    }
+
+    .mobile-menu .mobile-auth-badges .mobile-signup-badge {
+      color: #fff;
+      background: var(--primary);
+      box-shadow: 0 8px 20px rgba(91, 69, 232, .2);
+    }
+
+    .mobile-menu .mobile-auth-badges .mobile-signup-badge:hover {
+      background: var(--primary2);
+      transform: translateY(-2px);
     }
 
     /* ================================
@@ -265,7 +310,7 @@
       border-radius: 999px;
       background: #f0edff;
       color: var(--primary);
-      font-size: 12px;
+      font-size: 15px;
       font-weight: 850;
     }
 
@@ -322,7 +367,7 @@
     .hero-description {
       max-width: 570px;
       color: var(--muted);
-      font-size: 16px;
+      font-size: 19px;
       margin-bottom: 21px;
     }
 
@@ -354,7 +399,7 @@
       border-radius: 15px;
       background: #fff;
       box-shadow: var(--shadow);
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 850;
     }
 
@@ -371,12 +416,12 @@
 
     .hero-badge strong {
       display: block;
-      font-size: 18px;
+      font-size: 20px;
     }
 
     .hero-badge span {
       color: var(--muted);
-      font-size: 11px;
+      font-size: 13px;
     }
 
     /* ================================
@@ -405,7 +450,7 @@
 
     .feature-number {
       color: var(--primary);
-      font-size: 25px;
+      font-size: 30px;
       line-height: 1;
       font-weight: 950;
     }
@@ -413,12 +458,12 @@
     .feature-item strong {
       display: block;
       margin-top: 5px;
-      font-size: 13px;
+      font-size: 16px;
     }
 
     .feature-item span {
       color: var(--muted);
-      font-size: 11px;
+      font-size: 14px;
     }
 
     /* ================================
@@ -442,7 +487,7 @@
     }
 
     .section-title {
-      font-size: 29px;
+      font-size: 33px;
       line-height: 1.05;
       letter-spacing: -1.3px;
       font-weight: 920;
@@ -450,13 +495,13 @@
 
     .section-subtitle {
       color: var(--muted);
-      font-size: 13px;
+      font-size: 16px;
       margin-top: 6px;
     }
 
     .text-link {
       color: var(--primary);
-      font-size: 13px;
+      font-size: 16px;
       font-weight: 850;
       white-space: nowrap;
     }
@@ -513,22 +558,22 @@
       gap: 8px;
       margin-bottom: 7px;
       color: var(--muted);
-      font-size: 11px;
+      font-size: 14px;
       font-weight: 750;
     }
 
     .tag {
       display: inline-block;
-      padding: 5px 8px;
+      padding: 5px 9px;
       border-radius: 7px;
       background: #f0edff;
       color: var(--primary);
-      font-size: 10px;
+      font-size: 13px;
       font-weight: 900;
     }
 
     .card h3 {
-      font-size: 16px;
+      font-size: 19px;
       line-height: 1.2;
       margin-bottom: 6px;
       letter-spacing: -.25px;
@@ -536,8 +581,8 @@
 
     .card p {
       color: var(--muted);
-      font-size: 12px;
-      line-height: 1.45;
+      font-size: 15px;
+      line-height: 1.5;
     }
 
     .card-bottom {
@@ -546,17 +591,21 @@
       align-items: center;
       gap: 8px;
       margin-top: 12px;
+      flex-wrap: nowrap;
     }
 
     .price {
-      font-size: 15px;
+      font-size: 18px;
       font-weight: 950;
+      white-space: nowrap;
     }
 
     .rating {
       color: #956800;
-      font-size: 11px;
+      font-size: 14px;
       font-weight: 850;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     /* ================================
@@ -607,11 +656,11 @@
 
     .category-content strong {
       display: block;
-      font-size: 17px;
+      font-size: 20px;
     }
 
     .category-content span {
-      font-size: 11px;
+      font-size: 14px;
       opacity: .88;
     }
 
@@ -676,7 +725,7 @@
 
     .large-content p {
       color: rgba(255, 255, 255, .87);
-      font-size: 14px;
+      font-size: 17px;
       max-width: 560px;
       margin-bottom: 18px;
     }
@@ -714,14 +763,14 @@
     }
 
     .cta-box h2 {
-      font-size: 30px;
+      font-size: 32px;
       line-height: 1.04;
       letter-spacing: -1.2px;
     }
 
     .cta-box p {
       opacity: .84;
-      font-size: 13px;
+      font-size: 16px;
       margin-top: 6px;
     }
 
@@ -751,7 +800,7 @@
     .page-hero-copy p {
       max-width: 570px;
       color: var(--muted);
-      font-size: 14px;
+      font-size: 17px;
     }
 
     .page-hero-image {
@@ -783,7 +832,7 @@
       border: 0;
       outline: 0;
       padding: 9px 11px;
-      font-size: 13px;
+      font-size: 15px;
     }
 
     /* ================================
@@ -803,7 +852,7 @@
       border-radius: 999px;
       padding: 8px 12px;
       color: #5d6570;
-      font-size: 11px;
+      font-size: 13px;
       font-weight: 850;
     }
 
@@ -849,7 +898,7 @@
 
     .detail-copy>p {
       color: var(--muted);
-      font-size: 14px;
+      font-size: 17px;
       margin-bottom: 16px;
     }
 
@@ -870,12 +919,12 @@
     .fact span {
       display: block;
       color: var(--muted);
-      font-size: 10px;
+      font-size: 13px;
     }
 
     .fact strong {
       display: block;
-      font-size: 12px;
+      font-size: 15px;
       margin-top: 2px;
     }
 
@@ -890,20 +939,20 @@
     }
 
     .booking-card h3 {
-      font-size: 20px;
+      font-size: 22px;
       margin-bottom: 3px;
     }
 
     .booking-price {
       margin-bottom: 14px;
-      font-size: 27px;
+      font-size: 29px;
       font-weight: 950;
     }
 
     .booking-card label {
       display: block;
       margin-bottom: 5px;
-      font-size: 11px;
+      font-size: 13px;
       font-weight: 850;
     }
 
@@ -962,7 +1011,7 @@
     .checkout-title p {
       color: var(--muted);
       max-width: 620px;
-      font-size: 14px;
+      font-size: 17px;
     }
 
     .checkout-steps {
@@ -993,18 +1042,18 @@
       border-radius: 50%;
       background: #e7e3ff;
       color: var(--primary);
-      font-size: 10px;
+      font-size: 12px;
       font-weight: 950;
     }
 
     .checkout-step strong {
       display: block;
-      font-size: 12px;
+      font-size: 15px;
     }
 
     .checkout-step span {
       color: var(--muted);
-      font-size: 10px;
+      font-size: 13px;
     }
 
     .checkout-layout {
@@ -1021,7 +1070,7 @@
     }
 
     .checkout-panel h2 {
-      font-size: 22px;
+      font-size: 24px;
       letter-spacing: -.7px;
       margin-bottom: 16px;
     }
@@ -1039,7 +1088,7 @@
     .field label {
       display: block;
       margin-bottom: 5px;
-      font-size: 11px;
+      font-size: 13px;
       font-weight: 850;
     }
 
@@ -1049,7 +1098,7 @@
       border: 1px solid var(--line);
       border-radius: 10px;
       outline: none;
-      font-size: 13px;
+      font-size: 15px;
     }
 
     .field input:focus {
@@ -1076,13 +1125,13 @@
     }
 
     .order-body h3 {
-      font-size: 18px;
+      font-size: 20px;
       margin: 9px 0 8px;
     }
 
     .order-description {
       color: var(--muted);
-      font-size: 11px;
+      font-size: 14px;
       margin-bottom: 11px;
     }
 
@@ -1092,14 +1141,14 @@
       gap: 15px;
       padding: 8px 0;
       border-bottom: 1px solid #edf0f3;
-      font-size: 12px;
+      font-size: 15px;
     }
 
     .order-total {
       display: flex;
       justify-content: space-between;
       padding-top: 13px;
-      font-size: 17px;
+      font-size: 19px;
       font-weight: 950;
     }
 
@@ -1109,7 +1158,7 @@
       border-radius: 10px;
       background: #f7f8fa;
       color: var(--muted);
-      font-size: 11px;
+      font-size: 13px;
     }
 
     /* ================================
@@ -1138,14 +1187,14 @@
     }
 
     .ticket-content h2 {
-      font-size: 25px;
+      font-size: 27px;
       margin: 9px 0 4px;
       letter-spacing: -.8px;
     }
 
     .ticket-content>p {
       color: var(--muted);
-      font-size: 12px;
+      font-size: 14px;
     }
 
     .ticket-info {
@@ -1164,11 +1213,11 @@
     .ticket-info span {
       display: block;
       color: var(--muted);
-      font-size: 9px;
+      font-size: 12px;
     }
 
     .ticket-info strong {
-      font-size: 11px;
+      font-size: 14px;
     }
 
     .ticket-side {
@@ -1192,7 +1241,7 @@
     }
 
     .ticket-code {
-      font-size: 10px;
+      font-size: 13px;
       font-weight: 900;
     }
 
@@ -1232,7 +1281,7 @@
 
     .auth-box h1 {
       text-align: center;
-      font-size: 28px;
+      font-size: 30px;
       letter-spacing: -1px;
       margin-bottom: 4px;
     }
@@ -1240,7 +1289,7 @@
     .auth-subtitle {
       color: var(--muted);
       text-align: center;
-      font-size: 12px;
+      font-size: 15px;
       margin-bottom: 18px;
     }
 
@@ -1259,7 +1308,7 @@
       border: 1px solid var(--line);
       border-radius: 10px;
       background: #fff;
-      font-size: 13px;
+      font-size: 15px;
       font-weight: 850;
       transition: all .2s ease;
     }
@@ -1280,7 +1329,7 @@
       gap: 9px;
       margin: 13px 0;
       color: #9aa0aa;
-      font-size: 10px;
+      font-size: 13px;
     }
 
     .auth-divider:before,
@@ -1299,7 +1348,7 @@
     .auth-form label {
       display: block;
       margin-bottom: 5px;
-      font-size: 11px;
+      font-size: 14px;
       font-weight: 850;
     }
 
@@ -1309,7 +1358,7 @@
       border: 1px solid var(--line);
       border-radius: 10px;
       outline: none;
-      font-size: 13px;
+      font-size: 15px;
     }
 
     .password-field {
@@ -1349,7 +1398,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 11px;
+      font-size: 14px;
       color: var(--muted);
       margin: 2px 0 4px;
     }
@@ -1360,7 +1409,7 @@
       align-items: center;
       gap: 7px;
       cursor: pointer;
-      font-size: 11px;
+      font-size: 14px;
       color: var(--muted);
       user-select: none;
     }
@@ -1391,7 +1440,7 @@
       margin-top: 16px;
       color: var(--muted);
       text-align: center;
-      font-size: 11px;
+      font-size: 14px;
     }
 
     .auth-switch a {
@@ -1419,12 +1468,12 @@
       max-width: 320px;
       margin-top: 9px;
       color: #aeb3bc;
-      font-size: 12px;
+      font-size: 15px;
     }
 
     .footer-title {
       margin-bottom: 12px;
-      font-size: 13px;
+      font-size: 16px;
       font-weight: 900;
       letter-spacing: -0.2px;
     }
@@ -1436,7 +1485,7 @@
 
     .footer-links a {
       color: #aeb3bc;
-      font-size: 11px;
+      font-size: 15px;
       transition: color .2s;
     }
 
@@ -1455,7 +1504,7 @@
       align-items: center;
       gap: 9px;
       color: #aeb3bc;
-      font-size: 11px;
+      font-size: 15px;
       line-height: 1.4;
     }
 
@@ -1509,9 +1558,9 @@
 
     .footer-newsletter p {
       color: #aeb3bc;
-      font-size: 11px;
+      font-size: 15px;
       margin-bottom: 12px;
-      line-height: 1.45;
+      line-height: 1.5;
     }
 
     .newsletter-form {
@@ -1527,7 +1576,7 @@
       border: 1px solid #2d313a;
       background: #22252b;
       color: #fff;
-      font-size: 12px;
+      font-size: 14px;
       outline: none;
       transition: border-color .2s ease;
     }
@@ -1543,13 +1592,13 @@
     .newsletter-btn {
       padding: 10px 15px;
       white-space: nowrap;
-      font-size: 12px;
+      font-size: 14px;
     }
 
     .newsletter-msg {
       display: none;
       margin-top: 8px;
-      font-size: 11px;
+      font-size: 13px;
       color: #4ade80;
       font-weight: 750;
     }
@@ -1562,7 +1611,7 @@
       padding-top: 15px;
       border-top: 1px solid #292c32;
       color: #8d939c;
-      font-size: 10px;
+      font-size: 14px;
     }
 
     /* ================================
@@ -1732,7 +1781,7 @@
       }
 
       .hero-description {
-        font-size: 14px;
+        font-size: 16px;
       }
 
       .hero-visual {
@@ -1766,7 +1815,7 @@
       }
 
       .section-title {
-        font-size: 25px;
+        font-size: 27px;
       }
 
       .card-grid {
@@ -1787,17 +1836,20 @@
       }
 
       .card h3 {
-        font-size: 14px;
+        font-size: 17px;
+        line-height: 1.25;
       }
 
       .card p {
-        font-size: 11px;
+        font-size: 14px;
+        line-height: 1.4;
       }
 
       .card-bottom {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 4px;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 6px;
       }
 
       .category-grid {
@@ -1812,7 +1864,7 @@
       }
 
       .category-content strong {
-        font-size: 14px;
+        font-size: 16px;
       }
 
       .feature-item {
@@ -1834,7 +1886,7 @@
       }
 
       .large-content p {
-        font-size: 13px;
+        font-size: 15px;
       }
 
       .page-hero {
@@ -1906,20 +1958,49 @@
       }
 
       .cta-box h2 {
-        font-size: 27px;
+        font-size: 29px;
       }
 
       .footer-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 23px 17px;
+        gap: 24px 20px;
       }
 
       .footer-brand {
         grid-column: 1/-1;
       }
 
+      .footer-links a {
+        font-size: 15px;
+        line-height: 1.5;
+        word-break: break-word;
+        overflow-wrap: break-word;
+      }
+
+      .footer-contact-item {
+        font-size: 14px;
+        word-break: break-word;
+        overflow-wrap: break-word;
+      }
+
+      .footer-newsletter p {
+        font-size: 14px;
+        word-break: break-word;
+        overflow-wrap: break-word;
+      }
+
       .footer-bottom {
         flex-direction: column;
+        font-size: 13px;
+      }
+
+      .footer-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .newsletter-form {
+        flex-wrap: wrap;
       }
 
     }
@@ -2013,8 +2094,10 @@
       <a href="#experience" data-nav="experience">Experience</a>
       <a href="#checkout" data-nav="checkout">Checkout</a>
       <a href="#tickets" data-nav="tickets">Tickets</a>
-      <a href="#login">Log in</a>
-      <a href="#signup">Get started</a>
+      <div class="mobile-auth-badges">
+        <a href="#login" class="mobile-login-badge">Log in</a>
+        <a href="#signup" class="mobile-signup-badge">Get started</a>
+      </div>
 
     </div>
 
