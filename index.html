@@ -522,6 +522,9 @@
       border-radius: 20px;
       background: #fff;
       transition: .25s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
 
     .card:hover {
@@ -534,6 +537,7 @@
       height: 200px;
       overflow: hidden;
       background: #e9ebef;
+      flex-shrink: 0;
     }
 
     .card-image img {
@@ -549,6 +553,9 @@
 
     .card-body {
       padding: 14px 15px 16px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
     }
 
     .card-meta {
@@ -590,7 +597,8 @@
       justify-content: space-between;
       align-items: center;
       gap: 8px;
-      margin-top: 12px;
+      margin-top: auto;
+      padding-top: 12px;
       flex-wrap: nowrap;
     }
 
